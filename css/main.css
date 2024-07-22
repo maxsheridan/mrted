@@ -161,7 +161,14 @@ h1 {
   color: #111;
 }
 
+.visual {
+  max-width: 300px;
+  height: auto;
+}
+
 img {
+  max-width: 100%;
+  height: auto;
   border: 4px solid #111;
 }
 
