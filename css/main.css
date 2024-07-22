@@ -1,0 +1,190 @@
+@font-face {
+  font-family: 'A2RecordGothic';
+  src: url('/assets/type/A2_Record_Gothic_Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'A2RecordGothicMedium';
+  src: url('/assets/type/A2_Record_Gothic_Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DSertBlack';
+  src: url('/assets/type/DSert_Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  cursor: url('/assets/graphics/smiley_point.svg'), auto;
+}
+
+html a:hover {
+  cursor: url('/assets/graphics/smiley_hover.svg'), auto !important;
+}
+
+body {
+  height: 100vh;
+  height: 100dvh;
+  background-color: lavenderblush;
+  -ms-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+header {
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; 
+  left: 0; 
+  top: 0;
+  z-index: 1; 
+  width: 100%; 
+  height: 4rem; 
+  padding-right: clamp(1rem,3vw,1.5rem);
+  padding-left: clamp(1rem,3vw,1.5rem);
+  border-bottom: 2px solid #111;
+  background-color: lavenderblush;
+}
+
+nav.title {
+  display: flex;
+  flex: .5; 
+  position: relative; 
+}
+
+nav.links {
+  display: flex;
+  flex: .5;
+  justify-content: flex-end;
+  position: relative;  
+}
+
+nav.links a {
+  font-family: 'A2RecordGothicMedium', Helvetica, Arial, sans-serif;
+  font-size: clamp(1.063rem,3vw,1.125rem);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.6;
+  text-align: right;
+  color: #111;
+  text-decoration: none;
+}
+
+nav.links a:last-child {
+padding-left: 1rem;
+}
+
+nav.title a {
+  font-family: 'DSertBlack', Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  color: #111;
+  text-decoration: none;
+}
+
+nav:not(.title) a.active,
+nav a:hover {
+  color: #111;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.content {
+  position: relative;
+  padding: 8rem 1rem 4rem;
+}
+
+.text {
+  max-width: 40rem;
+}
+
+p {
+  font-family: 'A2RecordGothic', Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: #111;
+  margin: 1rem 0 0;
+}
+
+p.small {
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+h3 {
+  font-family: 'DsertBlack', Helvetica, Arial, sans-serif;
+  font-size: 2.25rem;
+  line-height: 1.1;
+  color: #111;
+  margin: 1rem 0 0;
+}
+
+h2 {
+  font-family: 'DsertBlack', Helvetica, Arial, sans-serif;
+  font-size: 4rem;
+  margin: 1rem 0 0;
+  line-height: 1;
+  color: #111;
+  margin: 2rem 0 0;
+}
+
+h1 {
+  font-family: 'DsertBlack', Helvetica, Arial, sans-serif;
+  font-size: 6rem;
+  margin: 1rem 0 0;
+  line-height: 1;
+  color: #111;
+}
+
+img {
+  max-width: 300px;
+  border: 4px solid #111;
+}
+
+hr {
+  height: 2px;
+  margin: 2rem 0;
+  border: none;
+  background: #EC47DB;
+}
+
+/*Mobile*/
+@media only screen and (max-width: 768px) {
+  p {
+    font-size: calc(1.3rem * 0.9);
+  }
+  h3 {
+    font-size: calc(2.25rem * 0.9);
+  }
+  h2 {
+    font-size: calc(4rem * 0.9);
+  }
+  h1 {
+    font-size: calc(6rem * 0.7);
+  }
+}
