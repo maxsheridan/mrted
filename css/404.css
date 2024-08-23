@@ -23,12 +23,12 @@
 
 html {
     font-size: 16px;
-        cursor: url('/assets/graphics/smiley_point.svg'), auto;
+        cursor: url('/assets/graphics/point.svg') 5 -5, auto;
 }
     
 html a:hover,
 button:hover {
-        cursor: url('/assets/graphics/smiley_hover.svg'), auto;
+        cursor: url('/assets/graphics/hover.svg') 5 -5, auto;
 }
 
 body {

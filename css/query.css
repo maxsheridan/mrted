@@ -22,27 +22,35 @@
     font-display: swap;
 }
 
+:root {
+    --primary-color: #111;
+    --secondary-color: #EC47DB;
+    --background-color: lavenderblush;
+    --heading-font: 'DSertBlack', Helvetica, Arial, sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     overscroll-behavior: none;
+    color: var(--primary-color);
 }
 
 html {
     font-size: 16px;
-    cursor: url('/assets/graphics/smiley_point.svg'), auto;
+    cursor: url('/assets/graphics/point.svg') 5 -5, auto;
 }
 
-html a:hover,
-button:hover {
-    cursor: url('/assets/graphics/smiley_hover.svg'), auto !important;
+html a:hover {
+    cursor: url('/assets/graphics/hover.svg') 5 -5, auto;
 }
 
 body {
     height: 100vh;
     height: 100dvh;
-    background-color: lavenderblush;
+    color: #111;
+    background-color: var(--background-color);
     -ms-text-size-adjust: none;
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
@@ -62,8 +70,8 @@ header {
     height: 4rem; 
     padding-right: clamp(1rem,3vw,1.5rem);
     padding-left: clamp(1rem,3vw,1.5rem);
-    border-bottom: 2px solid #111;
-    background-color: lavenderblush;
+    border-bottom: 2px solid var(--primary-color);
+    background-color: var(--background-color)
 }
 
 nav.title {
@@ -86,24 +94,25 @@ nav.links a {
     font-style: normal;
     line-height: 1.6;
     text-align: right;
-    color: #111;
     text-decoration: none;
+    color: var(--primary-color);
 }
 
 nav.links a:last-child {
-padding-left: 1rem;
-}
+    padding-left: 1rem;
+    }
 
 nav.title a {
-    font-family: 'DSertBlack', Helvetica, Arial, sans-serif;
+    font-family: var(--heading-font);
     font-size: 2rem;
-    color: #111;
     text-decoration: none;
+    color: var(--primary-color);
 }
 
-nav:not(.title) a.active {
-color: #EC47DB;
-}
+nav:not(.title) a.active,
+nav a:hover {
+    color: var(--secondary-color);
+    }
 
 .page {
     display: flex;
@@ -120,10 +129,9 @@ color: #EC47DB;
 }
 
 h1 {
-    font-family: 'DsertBlack', Helvetica, Arial, sans-serif;
+    font-family: var(--heading-font);
     font-size: 3rem;
     line-height: 1;
-    color: #111;
     margin: 2rem 0 0;
 }
 
@@ -170,16 +178,16 @@ button {
     border-radius: .15rem .15rem .15rem .15rem;   
     font-family: 'A2RecordGothic', Helvetica, Arial, sans-serif;
     font-size: 1rem;
-    color: lavenderblush;
-    background: #EC47DB; 
+    color: var(--background-color);
+    background: var(--secondary-color); 
 }
 
 button:hover {
-    background: #111;
+    background: var(--primary-color);
 }
 
 ::placeholder {
-    color: #111;
+    color: var(--primary-color);
     text-decoration: line-through;
     opacity: .4;
 }
@@ -190,7 +198,7 @@ form p {
     font-family: 'A2RecordGothic', Helvetica, Arial, sans-serif;
     font-size: 1rem;
     text-align: center;
-    color: #111;
+    color: var(--primary-color);
 }
 
 /*Mobile*/

@@ -22,6 +22,13 @@
     font-display: swap;
 }
 
+:root {
+    --primary-color: #111;
+    --secondary-color: #EC47DB;
+    --background-color: lavenderblush;
+    --heading-font: 'DSertBlack', Helvetica, Arial, sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -31,15 +38,18 @@
 
 html {
     font-size: 16px;
-    cursor: url('/assets/graphics/smiley_point.svg'), auto;
+    cursor: url('/assets/graphics/point.svg') 5 -5, auto;
 }
 
 html a:hover {
-    cursor: url('/assets/graphics/smiley_hover.svg'), auto !important;
+    cursor: url('/assets/graphics/hover.svg') 5 -5, auto;
 }
 
 body {
-    background-color: lavenderblush;
+    height: 100vh;
+    height: 100dvh;
+    color: #111;
+    background-color: var(--background-color);
     -ms-text-size-adjust: none;
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
@@ -59,8 +69,8 @@ header {
     height: 4rem; 
     padding-right: clamp(1rem,3vw,1.5rem);
     padding-left: clamp(1rem,3vw,1.5rem);
-    border-bottom: 2px solid #111;
-    background-color: lavenderblush;
+    border-bottom: 2px solid var(--primary-color);
+    background-color: var(--background-color)
 }
 
 nav.title {
@@ -83,23 +93,24 @@ nav.links a {
     font-style: normal;
     line-height: 1.6;
     text-align: right;
-    color: #111;
     text-decoration: none;
+    color: var(--primary-color);
 }
 
 nav.links a:last-child {
-padding-left: 1rem;
+    padding-left: 1rem;
 }
 
 nav.title a {
-    font-family: 'DSertBlack', Helvetica, Arial, sans-serif;
+    font-family: var(--heading-font);
     font-size: 2rem;
-    color: #111;
     text-decoration: none;
+    color: var(--primary-color);
 }
 
-nav:not(.title) a.active {
-    color: #EC47DB;
+nav:not(.title) a.active,
+nav a:hover {
+    color: var(--secondary-color);
 }
 
 main {
@@ -140,7 +151,7 @@ main {
     min-height: 100dvh;
     margin: auto 0; /*keeps content within viewport*/
     padding: 8rem 2.5rem; 
-    border-right: 2px solid #EC47DB;
+    border-right: 2px solid var(--secondary-color);
 }
 
 .section:last-of-type {
@@ -170,7 +181,7 @@ p {
 }
 
 h1 {
-    font-family: 'DsertBlack', Helvetica, Arial, sans-serif;
+    font-family: var(--heading-font);
     font-size: 3rem;
     line-height: 1;
     color: #111;
@@ -188,7 +199,7 @@ h1 {
         min-height: unset;
         padding: 4rem 1rem;
         border-right: none;
-        border-bottom: 2px solid #EC47DB;
+        border-bottom: 2px solid var(--secondary-color);
     }
 
     .section:first-child {
