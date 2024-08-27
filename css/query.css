@@ -26,6 +26,8 @@
     --primary-color: #111;
     --secondary-color: #EC47DB;
     --background-color: lavenderblush;
+    --nav-font: 'A2RecordGothicMedium', Helvetica, Arial, sans-serif; 
+    --body-font: 'A2RecordGothic', Helvetica, Arial, sans-serif;
     --heading-font: 'DSertBlack', Helvetica, Arial, sans-serif;
 }
 
@@ -34,7 +36,6 @@
     padding: 0;
     box-sizing: border-box;
     overscroll-behavior: none;
-    color: var(--primary-color);
 }
 
 html {
@@ -49,7 +50,7 @@ html a:hover {
 body {
     height: 100vh;
     height: 100dvh;
-    color: #111;
+    color: var(--primary-color);
     background-color: var(--background-color);
     -ms-text-size-adjust: none;
     -moz-text-size-adjust: none;
@@ -88,7 +89,7 @@ nav.links {
 }
 
 nav.links a {
-    font-family: 'A2RecordGothicMedium', Helvetica, Arial, sans-serif;
+    font-family: var(--nav-font);
     font-size: clamp(1.063rem,3vw,1.125rem);
     font-weight: 400;
     font-style: normal;
@@ -149,9 +150,9 @@ form {
 }
 
 label {
-    font-family: 'A2RecordGothic', Helvetica, Arial, sans-serif;
+    font-family: var(--body-font);
     font-size: 1rem;
-    color: #111;
+    color: var(--primary-color);
 }
 
 input, textarea {
@@ -160,7 +161,7 @@ input, textarea {
     padding: 1rem .5rem 1rem .5rem;
     border: none;
     border-radius: .15rem .15rem .15rem .15rem;
-    font-family: 'A2RecordGothic', Helvetica, Arial, sans-serif;
+    font-family: var(--body-font);
     font-size: 1rem;
     background-color: white;
 }
@@ -176,7 +177,7 @@ button {
     padding: .5rem 1.5rem;
     border: none;
     border-radius: .15rem .15rem .15rem .15rem;   
-    font-family: 'A2RecordGothic', Helvetica, Arial, sans-serif;
+    font-family: var(--body-font);
     font-size: 1rem;
     color: var(--background-color);
     background: var(--secondary-color); 
@@ -195,7 +196,7 @@ button:hover {
 /*Thanks message*/
 
 form p {
-    font-family: 'A2RecordGothic', Helvetica, Arial, sans-serif;
+    font-family: var(--body-font);
     font-size: 1rem;
     text-align: center;
     color: var(--primary-color);

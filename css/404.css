@@ -14,6 +14,14 @@
     font-display: swap;
 }
 
+:root {
+    --primary-color: #111;
+    --secondary-color: #EC47DB;
+    --background-color: lavenderblush;
+    --body-font: 'A2RecordGothic', Helvetica, Arial, sans-serif;
+    --heading-font: 'DSertBlack', Helvetica, Arial, sans-serif;
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -33,7 +41,7 @@ button:hover {
 
 body {
     overflow: hidden; 
-    background: lavenderblush;
+    background: var(--background-color);
     -ms-text-size-adjust: none;
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
@@ -55,18 +63,18 @@ body {
 }
 
 p {
-    font-family: 'A2RecordGothic', Helvetica, Arial, sans-serif;
+    font-family: var(--body-font);
     font-size: 1.3rem;
     line-height: 1.4;
-    color: #111;
+    color: var(--primary-color);
     margin: 1rem 0 0;
 }
 
 h1 {
-    font-family: 'DsertBlack', Helvetica, Arial, sans-serif;
+    font-family: var(--heading-font);
     font-size: 6rem;
     line-height: 1;
-    color: #111;
+    color: var(--primary-color);
     margin: 0 0 1rem;
 }
 
@@ -75,14 +83,14 @@ button {
     padding: .75rem 1.5rem;
     border: none;
     border-radius: .25rem .25rem .25rem .25rem;   
-    font-family: 'A2RecordGothic', Helvetica, Arial, sans-serif;
+    font-family: var(--body-font);
     font-size: 1.2rem;
-    color: lavenderblush;
-    background: #EC47DB; 
+    color: var(--background-color);
+    background: var(--secondary-color); 
 }
 
 button:hover {
-    background: #111;
+    background: var(--primary-color);
 }
 
 /*Mobile*/

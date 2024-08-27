@@ -26,6 +26,8 @@
     --primary-color: #111;
     --secondary-color: #EC47DB;
     --background-color: lavenderblush;
+    --nav-font: 'A2RecordGothicMedium', Helvetica, Arial, sans-serif; 
+    --body-font: 'A2RecordGothic', Helvetica, Arial, sans-serif;
     --heading-font: 'DSertBlack', Helvetica, Arial, sans-serif;
 }
 
@@ -48,7 +50,7 @@ html a:hover {
 body {
     height: 100vh;
     height: 100dvh;
-    color: #111;
+    color: var(--primary-color);
     background-color: var(--background-color);
     -ms-text-size-adjust: none;
     -moz-text-size-adjust: none;
@@ -87,7 +89,7 @@ nav.links {
 }
 
 nav.links a {
-    font-family: 'A2RecordGothicMedium', Helvetica, Arial, sans-serif;
+    font-family: var(--nav-font);
     font-size: clamp(1.063rem,3vw,1.125rem);
     font-weight: 400;
     font-style: normal;
@@ -173,10 +175,10 @@ main {
 } 
 
 p {
-    font-family: 'A2RecordGothic', Helvetica, Arial, sans-serif;
+    font-family: var(--body-font);
     font-size: 1.3rem;
     line-height: 1.5;
-    color: #111;
+    color: var(--primary-color);
     margin: 1rem 0 0;
 }
 
@@ -184,7 +186,7 @@ h1 {
     font-family: var(--heading-font);
     font-size: 3rem;
     line-height: 1;
-    color: #111;
+    color: var(--primary-color);
 }
 
 /*Mobile*/
