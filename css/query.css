@@ -43,8 +43,9 @@ html {
     cursor: url('/assets/graphics/point.svg') 5 -5, auto;
 }
 
-html a:hover {
-    cursor: url('/assets/graphics/hover.svg') 5 -5, auto;
+html a:hover,
+button:hover {
+        cursor: url('/assets/graphics/hover.svg') 5 -5, auto;
 }
 
 body {
