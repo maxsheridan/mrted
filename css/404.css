@@ -64,7 +64,7 @@ body {
 
 p {
     font-family: var(--body-font);
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     line-height: 1.4;
     color: var(--primary-color);
     margin: 1rem 0 0;
@@ -96,7 +96,7 @@ button:hover {
 /*Mobile*/
 @media only screen and (max-width: 768px) {
     p {
-      font-size: calc(1.3rem * 0.9);
+      font-size: calc(1.25rem * 0.9);
     }
 
     h1 {

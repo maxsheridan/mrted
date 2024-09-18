@@ -90,7 +90,7 @@ nav.links {
 
 nav.links a {
     font-family: var(--nav-font);
-    font-size: clamp(1.063rem,3vw,1.125rem);
+    font-size: 1.25rem;
     font-weight: 400;
     font-style: normal;
     line-height: 1.6;
@@ -176,7 +176,7 @@ main {
 
 p {
     font-family: var(--body-font);
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     line-height: 1.5;
     color: var(--primary-color);
     margin: 1rem 0 0;
@@ -220,8 +220,8 @@ h1 {
         height: unset;
     }
     
-    p {
-        font-size: calc(1.3rem * 0.9);
+    p, nav.links a {
+        font-size: calc(1.25rem * 0.9);
     
     }
     
