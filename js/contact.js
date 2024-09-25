@@ -1,33 +1,33 @@
-document.addEventListener("DOMContentLoaded", function() {
-    var submitted = false;
-    
-    document.getElementById("contactForm").addEventListener("submit", function(e) {
+function initContactForm() {
+    let submitted = false;
+
+    const contactForm = document.getElementById("contactForm");
+    if (!contactForm) return; // Safeguard: Exit if the form doesn't exist
+
+    contactForm.addEventListener("submit", function (e) {
         if (!submitted) {
             e.preventDefault(); // Prevent the form from submitting normally
-            
-            var contactForm = document.getElementById("contactForm");
-            var formElements = contactForm.querySelectorAll("*");
-            formElements.forEach(function(element) {
+
+            const formElements = contactForm.querySelectorAll("*");
+            formElements.forEach(element => {
                 element.style.display = "none"; // Hide all elements inside the form
             });
-            
-            var thanksMessage = document.createElement("p");
-            thanksMessage.textContent = "Thank you for your query.";
+
+            const thanksMessage = document.createElement("p");
+            thanksMessage.textContent = "Thank you for your query!";
             contactForm.insertBefore(thanksMessage, contactForm.firstChild); // Prepend the message
-            
+
             submitted = true;
-            setTimeout(function() {
-                contactForm.submit(); // Submit the form after a delay
-            }, 1000); // Adjust the delay as needed
+            setTimeout(() => contactForm.submit(), 1000); // Submit the form after a delay
         }
     });
 
-    document.getElementById("hidden_iframe").onload = function() {
+    document.getElementById("hidden_iframe").onload = function () {
         if (submitted) {
-            console.log('Form submitted and iframe loaded.');
             submitted = false; // Reset the variable if needed
-        } else {
-            console.error('Iframe loaded without form submission.');
         }
     };
-});
+}
+
+// Initialize form when content is loaded dynamically
+document.addEventListener("DOMContentLoaded", initContactForm);
