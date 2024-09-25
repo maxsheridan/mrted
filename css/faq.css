@@ -59,13 +59,6 @@ main {
     margin: 0 auto;
 } 
 
-h1 {
-    font-family: var(--heading-font);
-    font-size: 3rem;
-    line-height: 1;
-    color: var(--primary-color);
-}
-
 /*Mobile*/
 
 @media screen and (max-width: 768px) {
@@ -95,11 +88,5 @@ h1 {
 
     .text {
         height: unset;
-    }
-
-    
-    h1 {
-        font-size: calc(3rem * 0.9);
-        margin: 0;
     }
 }
