@@ -62,6 +62,15 @@ main {
 /*Mobile*/
 
 @media screen and (max-width: 1024px) {
+    main {
+        position: relative;
+        height: 100%;
+    }
+
+    .page {
+        position: relative;
+    }
+    
     .page-inner {
         display: block;
     }
@@ -75,7 +84,7 @@ main {
     }
 
     .section:first-child {
-        padding-top: 8rem;
+        padding-top: 4rem;
     }
 
     .section:last-child {
@@ -88,5 +97,9 @@ main {
 
     .text {
         height: unset;
+    }
+
+    h1 {
+        margin-top: 0;
     }
 }
