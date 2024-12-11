@@ -9,8 +9,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    padding-top: 8rem;
+    padding-top: 4rem;
     padding-right: clamp(1rem,3vw,1.5rem);
     padding-bottom: 4rem;
     padding-left: clamp(1rem,3vw,1.5rem);

@@ -48,8 +48,8 @@ html a:hover, button:hover {
 }
 
 body {
-  height: 100vh;
-  height: 100dvh;
+  height: calc(100vh - 4rem);
+  height: calc(100dvh - 4rem);
   color: var(--primary-color);
   background-color: var(--background-color);
   -ms-text-size-adjust: none;
@@ -66,7 +66,7 @@ header {
   position: fixed; 
   left: 0; 
   top: 0;
-  z-index: 4; 
+  z-index: 1; 
   width: 100%; 
   height: 4rem; 
   padding-right: clamp(1rem,3vw,1.5rem);
@@ -113,6 +113,10 @@ nav.title a {
 nav:not(.title) a.active,
 nav a:hover {
   color: var(--secondary-color);
+}
+
+#dynamic-content {
+  margin-top: 4rem;
 }
 
 p {
