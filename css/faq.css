@@ -17,14 +17,14 @@ main {
     -webkit-overflow-scrolling: touch;
 }
 
-/* FAQ only */
 .page-inner {
     display: flex;
     justify-content: start;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100vw !important;
+    max-width: unset;
     height: 100%;
     padding: unset;
 }
@@ -55,7 +55,6 @@ main {
 }
 
 .text {
-    width: max-content;
     max-width: 35rem;
     height: 130px;
     margin: 0 auto;
