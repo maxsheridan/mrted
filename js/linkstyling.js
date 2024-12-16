@@ -1,1 +1,1 @@
-var currentPath=window.location.pathname,navLinks=document.querySelectorAll("nav a");navLinks.forEach((function(t){t.getAttribute("href")===currentPath&&t.classList.add("active")}));
+var currentPath=window.location.pathname;var navLinks=document.querySelectorAll(".links a");navLinks.forEach(function(t){if(t.getAttribute("href")===currentPath){t.classList.add("active")}})

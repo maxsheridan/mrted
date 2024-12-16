@@ -5,20 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content">
         <meta name="color-scheme" content="light only">
-        <link rel="preload" as="image" href="/assets/images/mrted.webp" type="image/webp" fetchpriority="high">
-        <link rel="preload" as="font" href="/assets/type/DSert_Black.woff2" type="font/woff2" crossorigin=”anonymous” fetchpriority="high">
-        <link rel="preload" as="font" href="/assets/type/A2_Record_Gothic_Medium.woff2" type="font/woff2" crossorigin=”anonymous” fetchpriority="high">
-        <link rel="preload" as="font" href="/assets/type/A2_Record_Gothic_Regular.woff2" type="font/woff2" crossorigin=”anonymous” fetchpriority="high">
-        <title>Ted Literary</title>
         <link rel="stylesheet" href="/css/styles.css">
         <link rel="stylesheet" href="/css/about.css" id="about-style">
-        <link rel="stylesheet" href="/css/query.css" id="query-style">
-        <link rel="stylesheet" href="/css/faq.css" id="faq-style">
         <link rel="icon" sizes="32x32" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" sizes="any" href="/favicon.svg"  type="image/svg+xml">
         <link rel="apple-touch-icon" href="/assets/icons/apple_touch_icon.png" type="image/png">
         <link rel="manifest" as="fetch" href="/manifest.json" type="application/json">
         <link rel="canonical" href="https://mrted.maxsheridan.com">
+        <title>Ted Literary</title>
         <meta name="description" content="5-star literary representation! Bananas sales!">
         <meta name="thumbnail" content="https:/mrted.maxsheridan.com/assets/graphics/share.webp">
         <meta property="og:site_name" content="Ted Literary">
@@ -36,14 +30,37 @@
                 <a href="/" aria-label="Home">TED LITERARY</a>
             </nav>
             <nav class="links">
-                <a href="#" data-page="about" class="active">ABOUT</a>
-                <a href="#" data-page="query">QUERY</a>
-                <a href="#" data-page="faq">FAQ</a>
+                <a href="/">ABOUT</a>
+                <a href="/query">QUERY</a>
+                <a href="/faq">FAQ</a>
             </nav>
         </header>
-        <div id="dynamic-content" class="page">
-        <!-- Placeholder for dynamically loaded content -->
-        </div>
+        <main>
+            <div id="about" class="page">
+                <div class="page-inner">
+                    <div class="visual">
+                        <img src="/assets/images/mrted.webp" alt="Mr. Ted" width="400px" height="496px" fetchpriority="high" loading="eager">
+                        <p class="small">Photo credit: Lionel Bud Coup</p>
+                    </div>
+                    <div class="text">
+                        <h2>MEET MR. TED</h2>
+                        <h3>After nearly three decades in pet food retail, Mr. Ted threw all caution to the wind and enrolled in a crash course in building security and maintenance.</h3>
+                        <p>
+                        One night, on his beat at Janklow and Nesbit in Manhattan, he discovered the joys of literature. Applying himself with relish to his new-found calling, Ted immediately secured the rights to The Golden Diatribes of Dr. Jothi Parbinder (an Indian self-help guru also working the security beat at Janklow and Nesbit.) In a matter of days, the two literary mavericks were renting an office in Hackettstown, New Jersey, determined to change literature forever.</p>
+                        <p>Ted Jothi Literary Associates closed its doors in less than a month when Dr. Parbinder vanished after mysteriously reverse-charging 10 years of unpaid electricity bills he’d discovered in an office filing cabinet back to Jersey Central Power & Light, landing Mr. Ted in the pen for three years.</p>
+                        </p>
+                        <p>
+                        In prison, Mr. Ted struck up a literary correspondence with author Max Sheridan, who had by chance written a 5-star review of the Golden Diatribes for Dr. Parbinder in exchange for two 3-star reviews of his first novel, an agreement Parbinder never honored. 
+                        When Ted was released from prison at the age of 52, a licensed pastor, he convinced Sheridan to let him manage his transatlantic literary career in exchange for a 5% cut and his assistance in tracking down their mutual nemesis, Dr. Parbinder — who at the time still owed Sheridan his two 3-star reviews.
+                        </p>
+                        <p>
+                        Today, Mr. Ted is more devoted than ever to advancing the literary careers of a select clientele. While he focuses primarily on self-help, sports, conspiracy theories, sci-fi, detective series, professional gambling memoirs, YA, horror, speculative and literary fiction, illustrated children’s books, feminism, trans and non-binary authors, diaspora voices, dissident literatures, and diet and nutrition manuals, with the occasional foray into self-published genealogies, Tarot and Cabala guides, and pet care, he is really open to anything with a fresh perspective and a solid market.
+                        </p>
+                    </div> 
+                </div>
+            </div>
+        </main>
+        <script src="/js/linkstyling.js" defer></script>
         <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
@@ -52,10 +69,6 @@
                 "description": "5-star literary representation! Bananas sales!",
                 "url": "https://mrted.maxsheridan.com"
             }
-        </script>
-        <script src="/js/dynamic.js" defer></script>
-        <script src="/js/scroll.js" defer></script>
-        <script src="/js/linkstyling.js" defer></script>
-        <script src="/js/contact.js" defer></script>
+        </script> 
     </body>
 </html>
