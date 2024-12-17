@@ -41,6 +41,7 @@ button {
     font-size: 1.1rem;
     color: var(--background-color);
     background: var(--secondary-color); 
+    cursor: pointer;
 }
 
 button:hover {
