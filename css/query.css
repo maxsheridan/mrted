@@ -63,7 +63,7 @@ form p {
 
 /*Mobile*/
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     form p {
         font-size: calc(1.25rem * 0.9);
     }
