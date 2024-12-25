@@ -34,6 +34,7 @@
 * {
   margin: 0;
   padding: 0;
+  border: 0;
   box-sizing: border-box;
   overscroll-behavior: none;
 }
@@ -46,10 +47,6 @@ body {
   min-height: 100dvh;
   color: var(--primary-color);
   background-color: var(--background-color);
-  -ms-text-size-adjust: none;
-  -moz-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
 }
 
 header {
@@ -75,14 +72,21 @@ nav.title {
   position: relative; 
 }
 
-nav.links {
+nav.title a {
+  font-family: var(--heading-font);
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+nav.bunch-of-links {
   display: flex;
   flex: .5;
   justify-content: flex-end;
   position: relative;  
 }
 
-nav.links a {
+nav.bunch-of-links a {
   font-family: var(--nav-font);
   font-size: 1.25rem;
   font-weight: 400;
@@ -93,15 +97,8 @@ nav.links a {
   color: var(--primary-color);
 }
 
-nav.links a {
+nav.bunch-of-links a {
 margin-left: 1rem;
-}
-
-nav.title a {
-  font-family: var(--heading-font);
-  font-size: 2rem;
-  text-decoration: none;
-  color: var(--primary-color);
 }
 
 nav:not(.title) a.active,
@@ -109,7 +106,7 @@ nav a:hover {
   color: var(--secondary-color);
 }
 
-.page {
+.acme-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -119,7 +116,7 @@ nav a:hover {
   padding-left: clamp(1rem,3vw,1.5rem);
 }
 
-.page-inner {
+.stuff{
   width: 100%;
   max-width: 38rem;
 }
@@ -168,7 +165,7 @@ hr {
   background: var(--secondary-color);
 }
 
-.visual {
+.a-big-photo {
   max-width: 300px;
   height: auto;
 }
@@ -187,7 +184,7 @@ p.small {
 
 /*Mobile*/
 @media only screen and (max-width: 1024px) {
-  p, nav.links a {
+  p, nav.bunch-of-links a {
     font-size: calc(1.25rem * 0.9);
   }
 
