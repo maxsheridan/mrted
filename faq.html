@@ -22,7 +22,7 @@
         <meta property="og:image:type" content="image/webp">
         <meta property="og:image:width" content="720">
         <meta property="og:image:height" content="720">
-        <style>main{position:fixed;top:0;left:0;width:100%;height:100vh;height:100dvh}.page{position:absolute;top:0;left:0;min-width:100%;height:100%;overflow-x:scroll;-webkit-overflow-scrolling:touch}.page-inner{display:flex;justify-content:start;position:absolute;top:0;left:0;width:100vw!important;max-width:unset;height:100%;padding:unset}.section{display:flex;flex:none;justify-content:center;align-items:center;position:relative;width:45%;min-height:100vh;min-height:100dvh;margin:auto 0;padding:8rem 2.5rem;border-right:2px solid var(--secondary-color)}.section:last-of-type{border:none}.section-inner{display:flex;justify-content:center;align-items:center;width:100%}.text{max-width:35rem;height:130px;margin:0 auto}@media screen and (max-width:1024px){.page{position:relative}.page-inner{display:block;padding:4rem 0 0}.section{width:100%;min-height:unset;padding:4rem 1rem;border-right:none;border-bottom:2px solid var(--secondary-color)}.section:first-child{padding-top:4rem}.section:last-child{padding-bottom:4rem}.section-inner{padding:0}.text{width:100%;height:unset}h1{margin-top:0}}</style>
+        <style>main{position:fixed;top:0;left:0;width:100%;height:100vh;height:100dvh}.acme-all-purpose-wrapper{position:absolute;top:0;left:0;min-width:100%;height:100%;overflow-x:scroll;-webkit-overflow-scrolling:touch}.stuff{display:flex;justify-content:start;position:absolute;top:0;left:0;width:100vw!important;max-width:unset;height:100%;padding:unset}section{display:flex;flex:none;justify-content:center;align-items:center;position:relative;width:45%;min-height:100vh;min-height:100dvh;margin:auto 0;padding:8rem 2.5rem;border-right:2px solid var(--secondary-color)}section:last-of-type{border:none}.acme-section-wrapper{display:flex;justify-content:center;align-items:center;width:100%}.some-faq{max-width:35rem;height:130px;margin:0 auto}@media screen and (max-width:1024px){.page{position:relative}.stuff{display:block;padding:4rem 0 0}section{width:100%;min-height:unset;padding:4rem 1rem;border-right:none;border-bottom:2px solid var(--secondary-color)}section:first-child{padding-top:4rem}section:last-child{padding-bottom:4rem}.acme-section-wrapper{padding:0}.some-faq{width:100%;height:unset}h1{margin-top:0}}</style>
     </head>
     <body>
         <header>
@@ -35,52 +35,52 @@
                 <a href="/faq">FAQ</a>
             </nav>
         </header>
-        <main>
-            <div id="faq" class="page">
-                <div class="page-inner">
-                    <section class="section">
-                        <div class="section-inner">
-                            <div class="text">
+        <main id="faq">
+            <div class="acme-all-purpose-wrapper">
+                <div class="stuff">
+                    <section>
+                        <div class="acme-section-wrapper">
+                            <div class="some-faq">
                                 <h1>What’s your cut?</h1>
                                 <p>I take a flat, one-time-only payment of $599 for my services, plus 5-10% of our first six-figure sale. All other proceeds are yours.</p>
                             </div>
                         </div> 
                     </section>
-                    <section class="section">
-                        <div class="section-inner">
-                            <div class="text">
+                    <section>
+                        <div class="acme-section-wrapper">
+                            <div class="some-faq">
                                 <h1>Who are your other clients?</h1>
                                 <p>Fun fact: I represented Stephen King for a month or two in the 1970s when his career was in the toilet! My current list includes Dr. Sanjay Gupta, Anshel Pfeffer, and Levon Aronian.</p>
                             </div>
                         </div> 
                     </section>
-                    <section class="section">
-                        <div class="section-inner">
-                            <div class="text">
+                    <section>
+                        <div class="acme-section-wrapper">
+                            <div class="some-faq">
                                 <h1>Are you a convicted felon?</h1>
                                 <p>Yes.</p>
                             </div>
                         </div> 
                     </section>
-                    <section class="section">
-                        <div class="section-inner">
-                            <div class="text">
+                    <section>
+                        <div class="acme-section-wrapper">
+                            <div class="some-faq">
                                 <h1>Are you interested in YA?</h1>
                                 <p>Ordinarily, no. But query me. You may be surprised.</p>
                             </div>
                         </div> 
                     </section>
-                    <section class="section">
-                        <div class="section-inner">
-                            <div class="text">
+                    <section>
+                        <div class="acme-section-wrapper">
+                            <div class="some-faq">
                                 <h1>Can I send my MS by mail?</h1>
                                 <p>For an additional $99, I accept mailed submissions.</p>
                             </div>
                         </div> 
                     </section>
-                    <section class="section">
-                        <div class="section-inner">
-                            <div class="text">
+                    <section>
+                        <div class="acme-section-wrapper">
+                            <div class="some-faq">
                                 <h1>What is your literary wish list?</h1>
                                 <p>I would like to see just about anything... with a potential for bananas sales! I have a particular soft spot for in-your-face, transgressive vegan cookbooks and multi-generational historical epics written from the perspective of Philip Drummond of Different Strokes.</p>
                             </div>
@@ -88,6 +88,11 @@
                     </section>
                 </div>
             </div>
+            <noscript style="position: absolute; bottom: 2rem; left: 2rem">
+                <p style="color: var(--primary-color)">
+                    Yikes! You have JavaScript disabled. Scroll left to right to make this page move.
+                </p>
+            </noscript>
         </main>
         <script src="/js/scroll.js" defer></script>
         <script src="/js/linkstyling.js" defer></script>
@@ -99,6 +104,6 @@
                 "description": "Frequently asked questions.",
                 "url": "https://mrted.maxsheridan.com/faq"
             }
-        </script> 
+        </script>
     </body>
 </html>
