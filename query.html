@@ -31,7 +31,7 @@
             </nav>
             <nav class="bunch-of-links">
                 <a href="/">ABOUT</a>
-                <a href="/query">QUERY</a>
+                <a href="/query" class="active">QUERY</a>
                 <a href="/faq">FAQ</a>
             </nav>
         </header>
@@ -76,7 +76,6 @@
             </div>
         </main>
         <script>function initContactForm(){let t=!1;const e=document.getElementById("contactForm");e&&(e.addEventListener("submit",(function(n){if(!t){n.preventDefault();e.querySelectorAll("*").forEach((t=>{t.style.display="none"}));const o=document.createElement("p");o.textContent="Thank you for your query!",e.insertBefore(o,e.firstChild),t=!0,setTimeout((()=>e.submit()),1e3)}})),document.getElementById("hidden_iframe").onload=function(){t&&(t=!1)})}document.addEventListener("DOMContentLoaded",initContactForm);</script>
-        <script src="/linkstyling.js" defer></script>
         <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
