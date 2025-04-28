@@ -178,3 +178,20 @@ img {
 p.small {
     font-size: clamp(1.04rem,3vw,1.15rem);
 }
+
+button {
+    margin-block-start: var(--big-gap);
+    padding:.75rem 1.5rem;
+    border: none;
+    border-radius:.25rem;
+    font-family:var(--body-font);
+    font-size:var(--body-font-size);
+    color:var(--background-color);
+    background:var(--accent-color);
+    cursor:pointer}
+    
+@media (hover:hover) and (pointer:fine) {
+    button:hover {
+        background:var(--primary-color)
+    }
+}
