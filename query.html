@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content">
         <meta name="color-scheme" content="light only">
-        <link rel="stylesheet" href="/global.css" type="text/css">
+        <link rel="stylesheet" href="/style.css" type="text/css">
         <link rel="icon" sizes="32x32" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" sizes="any" href="/favicon.svg"  type="image/svg+xml">
         <link rel="apple-touch-icon" href="/assets/icons/apple_touch_icon.png" type="image/png">
@@ -23,56 +23,54 @@
         <meta property="og:image:type" content="image/webp">
         <meta property="og:image:width" content="720">
         <meta property="og:image:height" content="720">
-        <style>form{width:100%;margin:0 auto}.form-title{display:flex;justify-content:center;margin:0 0 1rem}label{font-family:var(--body-font);font-size:1.35rem;color:var(--primary-color)}input,textarea{width:100%;margin:.5rem 0 2rem;padding:1rem .5rem 1rem .5rem;border:none;border-radius:.15rem;font-family:var(--body-font);font-size:1.35rem;background-color:#fff}textarea{min-width:100%;max-width:100%;min-height:100px;max-height:600px}button{padding:.75rem 1.75rem;border:none;border-radius:.25rem;font-family:var(--body-font);font-size:1.35rem;color:var(--background-color);background:var(--accent-color);cursor:pointer}button:hover{background:var(--primary-color)}::placeholder{color:var(--primary-color);text-decoration:line-through;opacity:.4}form p{font-family:var(--body-font);text-align:center;color:var(--accent-color)}@media(max-width:1024px){label,input,textarea{font-size:calc(1.35rem * 0.9)}}</style>
+        <style>main{display:flex;justify-content:center;width:100%}form{width:100%}.form-title{display:flex;justify-content:center}.question{margin-block-start:var(--big-gap)}input,textarea{width:100%;padding:1rem .5rem;border:none;border-radius:.15rem;font-family:var(--body-font);font-size:var(--body-font-size);background-color:var(--form-background-color)}textarea{min-height:100px;max-height:600px}button{margin-block-start:var(--big-gap);padding:.75rem 1.75rem;border:none;border-radius:.25rem;font-family:var(--body-font);font-size:var(--body-font-size);color:var(--background-color);background:var(--accent-color);cursor:pointer}button:hover{background:var(--primary-color)}</style>
     </head>
-    <body>
-        <header>
-            <nav class="home-sweet-home">
+    <body class="margins-off">
+        <header class="margins-off">
+            <div class="home-is-where-the-persimmons-grow">
                 <a href="/" aria-label="Home">TED LITERARY</a>
-            </nav>
-            <nav class="bunch-of-links">
-                <a href="/">ABOUT</a>
-                <a href="/query" class="active">QUERY</a>
+            </div>
+            <nav class="margins-off">
+                <a href="/" class="active">ABOUT</a>
+                <a href="/query">QUERY</a>
                 <a href="/faq">FAQ</a>
             </nav>
         </header>
         <main id="query">
             <div class="acme-all-purpose-wrapper">
-                <div class="stuff">
-                    <form id="contactForm" name="contactForm" target="hidden_iframe" action="https://docs.google.com/forms/d/e/1FAIpQLSeqbal9UuvLECtvOeQhaXBk7wAB2psVlj-tX0ROF-L84LS0wQ/formResponse?">
-                        <h1 class="form-title">Query Ted</h1><br>
-                        <div class="question">
-                            <label for="entry.447528673">Name</label><br>
-                            <input type="text" name="entry.447528673" id="entry.447528673">
-                        </div>
-                        <div class="question">
-                            <label for="entry.503409760">Email</label><br>
-                            <input type="text" name="entry.503409760" id="entry.503409760">
-                        </div>
-                        <div class="question">
-                            <label for="entry.2023911735">Book Title</label><br>
-                            <input type="text" name="entry.2023911735" id="entry.2023911735">
-                        </div>
-                        <div class="question">
-                            <label for="entry.339888623">4-Sentence Pitch</label><br>
-                            <textarea name="entry.339888623" id="entry.339888623" placeholder=""></textarea>
-                        </div>
-                        <div class="question">
-                            <label for="entry.747259284">Short Bio</label><br>
-                            <textarea name="entry.747259284" id="entry.747259284" placeholder=""></textarea>
-                        </div>
-                        <div class="question">
-                            <label for="entry.882631877">Your Venmo Handle</label><br>
-                                <input type="text" name="entry.882631877" id="entry.882631877">
-                        </div>
-                        <button type="submit">Send</button>
-                        <noscript>
-                            <p style="margin-top: 1rem; text-align: left; color: var(--accent-color)">
-                                Yikes! You’ve disabled JavaScript. This button can’t work.
-                            </p>
-                        </noscript>
-                    </form>
-                </div>
+                <form id="contactForm" name="contactForm" target="hidden_iframe" action="https://docs.google.com/forms/d/e/1FAIpQLSeqbal9UuvLECtvOeQhaXBk7wAB2psVlj-tX0ROF-L84LS0wQ/formResponse?">
+                    <h1 class="form-title">Query Ted</h1>
+                    <div class="question">
+                        <label for="entry.447528673">Name</label>
+                        <input type="text" name="entry.447528673" id="entry.447528673">
+                    </div>
+                    <div class="question">
+                        <label for="entry.503409760">Email</label>
+                        <input type="text" name="entry.503409760" id="entry.503409760">
+                    </div>
+                    <div class="question">
+                        <label for="entry.2023911735">Book Title</label>
+                        <input type="text" name="entry.2023911735" id="entry.2023911735">
+                    </div>
+                    <div class="question">
+                        <label for="entry.339888623">4-Sentence Pitch</label>
+                        <textarea name="entry.339888623" id="entry.339888623" placeholder=""></textarea>
+                    </div>
+                    <div class="question">
+                        <label for="entry.747259284">Short Bio</label>
+                        <textarea name="entry.747259284" id="entry.747259284" placeholder=""></textarea>
+                    </div>
+                    <div class="question">
+                        <label for="entry.882631877">Your Venmo Handle</label>
+                            <input type="text" name="entry.882631877" id="entry.882631877">
+                    </div>
+                    <button type="submit">Send</button>
+                    <noscript>
+                        <p style="margin-top: 1rem; text-align: left; color: var(--accent-color)">
+                            Yikes! You’ve disabled JavaScript. This button can’t work.
+                        </p>
+                    </noscript>
+                </form>
                 <iframe name="hidden_iframe" id="hidden_iframe" style="display: none;"></iframe>
             </div>
         </main>

@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'A2 Record Gothic';
+    src: url(/assets/type/A2_Record_Gothic_Regular.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'A2 Record Gothic';
+    src: url(/assets/type/A2_Record_Gothic_Medium.woff2) format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DSert';
+    src: url(/assets/type/DSert_Black.woff2) format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --small-gap: .75rem;
+    --gap: 1.25rem;
+    --big-gap: 2.5rem;
+    --outer-padding: clamp(1rem, 3vw,1.5rem);
+    --body-font: 'A2 Record Gothic',sans-serif,system-ui;
+    --body-font-size: clamp(1.22rem,3vw,1.35rem);
+    --heading-font: 'DSert',sans-serif,system-ui;
+    --primary-color: #111;
+    --accent-color: #9E1090;
+    --background-color: lavenderblush;
+    --form-background-color: white;
+}
+
+:focus-visible {
+    outline:  3px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    overscroll-behavior: none;
+    scrollbar-width: thin;
+}
+
+* + * {
+    margin-block-start: var(--gap);
+}
+
+.margins-off > * {
+    margin-block-start: 0;
+}
+
+.small-gap {
+    margin-block-start: var(--small-gap);
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100dvh;
+    margin: unset;
+    font-family: var(--body-font);
+    font-size: var(--body-font-size);
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--primary-color);
+    background-color: var(--background-color);
+}
+
+header {
+    display: flex;
+    flex: .5;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 4rem;
+    padding: 0 var(--outer-padding);
+    border-bottom: 2px solid var(--primary-color);
+    background-color: var(--background-color);
+}
+
+.home-is-where-the-persimmons-grow a {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+nav {
+    display: flex;
+    flex: .5;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+nav a {
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+nav a.active {
+    color: var(--accent-color);
+}
+
+@media (hover: hover) and (pointer: fine)  {
+    nav a:hover  {
+        color:  var(--accent-color);
+    }
+}
+
+.acme-all-purpose-wrapper {
+    width: 100%;
+    max-width: 40rem;
+    padding: clamp(8rem,12vw,10rem) var(--outer-padding) clamp(4rem,12vw,6rem) ;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+h3 {
+    font-family: var(--heading-font);
+    font-size: clamp(2.03rem,3vw,2.25rem);
+    line-height: 1.1;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    font-size: clamp(3.6rem,3vw,4rem);
+    line-height: 1;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    font-size: clamp(2.7rem,3vw,3rem);
+    line-height: 1;
+
+}
+
+hr {
+    height: 2px;
+    margin: 2rem 0;
+    border: none;
+    background: var(--accent-color);
+}
+
+.a-big-photo {
+    max-width: 300px;
+    height: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 4px solid var(--primary-color);
+}
+
+p.small {
+    font-size: clamp(1.04rem,3vw,1.15rem);
+}
