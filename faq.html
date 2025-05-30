@@ -23,20 +23,29 @@
         <meta property="og:image:type" content="image/webp">
         <meta property="og:image:width" content="720">
         <meta property="og:image:height" content="720">
-        <style>*{scrollbar-width:none}@media(max-width:1024px){*{scrollbar-width:thin}}main{position:fixed;top:0;left:0;width:100%;height:100vh;height:100dvh}.acme-all-purpose-wrapper{position:absolute;top:0;left:0;min-width:100%;height:100%;overflow-x:scroll;-webkit-overflow-scrolling:touch}.stuff{display:flex;justify-content:start;position:absolute;top:0;left:0;width:100vw!important;max-width:unset;height:100%;padding:unset}section{display:flex;flex:none;justify-content:center;align-items:center;position:relative;width:45%;min-height:100vh;min-height:100dvh;margin:auto 0;padding:8rem 2.5rem;border-right:2px solid var(--accent-color)}section:last-of-type{border:none}.acme-section-wrapper{display:flex;justify-content:center;align-items:center;width:100%}.some-faq{max-width:35rem;height:130px;margin:0 auto}@media screen and (max-width:1024px){.acme-all-purpose-wrapper{position:relative}.stuff{display:block;padding:4rem 0 0}section{width:100%;min-height:unset;padding:4rem 1rem;border-right:none;border-bottom:2px solid var(--accent-color)}section:first-child{padding-top:4rem}section:last-child{padding-bottom:4rem}.acme-section-wrapper{padding:0}.some-faq{width:100%;height:unset}h1{margin-top:0}.noscript{display:none}}</style>
+        <style>*{scrollbar-width:none}@media(max-width:1024px){*{scrollbar-width:thin}}main{position:fixed;top:0;left:0;width:100%;height:100vh;height:100dvh}.acme-all-purpose-wrapper{position:absolute;top:0;left:0;min-width:100%;height:100%;overflow-x:scroll;-webkit-overflow-scrolling:touch}.stuff{display:flex;justify-content:start;position:absolute;top:0;left:0;width:100vw!important;max-width:unset;height:100%;padding:unset}section{display:flex;flex:none;justify-content:center;align-items:center;position:relative;width:45%;min-height:100vh;min-height:100dvh;margin:auto 0;padding:8rem 2.5rem;border-right:2px solid var(--accent-color)}section:last-of-type{border:none}.acme-section-wrapper{display:flex;justify-content:center;align-items:center;width:100%}.some-faq{max-width:35rem;height:150px;margin:0 auto}@media screen and (max-width:1024px){.acme-all-purpose-wrapper{position:relative}.stuff{display:block;padding:4rem 0 0}section{width:100%;min-height:unset;padding:4rem 1rem;border-right:none;border-bottom:2px solid var(--accent-color)}section:first-child{padding-top:4rem}section:last-child{padding-bottom:4rem}.acme-section-wrapper{padding:0}.some-faq{width:100%;height:unset}h1{margin-top:0}.noscript{display:none}}</style>
     </head>
-    <body class="margins-off">
-        <header class="margins-off">
-            <div class="home-is-where-the-persimmons-grow">
-                <a href="/" aria-label="Home">TED LITERARY</a>
-            </div>
-            <nav class="margins-off">
-                <a href="/">ABOUT</a>
-                <a href="/query">QUERY</a>
-                <a href="/faq" class="active">FAQ</a>
+    <body>
+        <header class="linkstyling-off">
+            <h1>
+                <a href="/" class="site-title" aria-label="Link to homepage">TED LITERARY</a>
+            </h1>
+            <h2 id="nav-label" class="vh">Main Menu</h2>
+            <nav aria-labelledby="nav-label">
+                <ul>
+                    <li>
+                        <a href="/">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="/query">QUERY</a>
+                    </li>
+                    <li>
+                        <a href="/faq" class="active">FAQ</a>
+                    </li>
+                </ul>
             </nav>
         </header>
-        <main id="faq">
+        <main>
             <div class="acme-all-purpose-wrapper">
                 <div class="stuff">
                     <section>

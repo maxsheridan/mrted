@@ -26,10 +26,10 @@
     --small-gap: .75rem;
     --gap: 1.25rem;
     --big-gap: 2.5rem;
-    --outer-padding: clamp(1rem, 3vw,1.5rem);
-    --body-font: 'A2 Record Gothic',sans-serif,system-ui;
+    --outer-padding: clamp(1rem,3vw,1.5rem);
+    --body-font: 'A2 Record Gothic',system-ui,sans-serif;
     --body-font-size: clamp(1.22rem,3vw,1.35rem);
-    --heading-font: 'DSert',sans-serif,system-ui;
+    --heading-font: 'DSert',system-ui,sans-serif;
     --primary-color: #111;
     --accent-color: #9E1090;
     --background-color: lavenderblush;
@@ -50,7 +50,7 @@
     scrollbar-width: thin;
 }
 
-* + * {
+main * + * {
     margin-block-start: var(--gap);
 }
 
@@ -97,16 +97,17 @@ header {
     background-color: var(--background-color);
 }
 
-.home-is-where-the-persimmons-grow a {
+.site-title {
+    display: flex;
     font-family: var(--heading-font);
     font-size: clamp(1.8rem,3vw,2rem);
     font-weight: 900;
-    line-height: 1;
 }
 
-nav {
+nav ul {
     display: flex;
     gap: 1rem;
+    list-style: none;
 }
 
 nav a {
@@ -126,30 +127,34 @@ nav a.active {
 a {
     color: var(--primary-color);
     text-decoration: none;
+    pointer-events: auto;
+    cursor: pointer;
+    transition: color .3s ease;
 }
 
-h3 {
-    font-family: var(--heading-font);
-    font-size: clamp(2.03rem,3vw,2.25rem);
-    font-weight: 900;
-    line-height: 1.1;
+.fuchsia {
+    color: var(--accent-color);
+}
+
+.linkstyling-off a {
+    text-decoration: none;
 }
 
 h2 {
     font-family: var(--heading-font);
-    font-size: clamp(3.6rem,3vw,4rem);
+    font-size: clamp(1.7rem,2.1rem,2.1rem);
     font-weight: 900;
-    line-height: 1;
+    line-height: 1.1;
 }
 
 h1 {
     font-family: var(--heading-font);
-    font-size: clamp(2.7rem,3vw,3rem);
+    font-size: clamp(2.4rem,2vw,3rem);
     font-weight: 900;
     line-height: 1;
 }
 
-.a-big-photo {
+.a-big-photo-of-Ted {
     max-width: 300px;
     height: auto;
 }
@@ -182,4 +187,12 @@ button {
     button:hover {
         background:var(--primary-color)
     }
+}
+.vh {
+    position:absolute;
+    overflow:hidden;
+    width:1px;
+    height:1px;
+    clip-path:inset(50%);
+    white-space:nowrap;
 }
