@@ -33,6 +33,7 @@
     --primary-color: #111;
     --accent-color: #9E1090;
     --background-color: lavenderblush;
+    --link-color: #8D8C8C;
     --form-background-color: white;
 }
 
@@ -126,7 +127,11 @@ nav a.active {
 
 a {
     color: var(--primary-color);
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--link-color);
+    text-underline-offset: 2px;
+    text-decoration-skip-ink: all;
     pointer-events: auto;
     cursor: pointer;
     transition: color .3s ease;
@@ -182,7 +187,11 @@ button {
     
 @media (hover:hover) and (pointer:fine) {
     a:hover {
+        opacity: .6;
+    }
+    header a:hover {
         color: var(--accent-color);
+        opacity: 1;
     }
     button:hover {
         background:var(--primary-color)
