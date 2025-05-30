@@ -23,6 +23,15 @@
         <meta property="og:image:type" content="image/webp">
         <meta property="og:image:width" content="720">
         <meta property="og:image:height" content="720">
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "name": "Query",
+                "description": "Query Mr. Ted!",
+                "url": "https://mrted.maxsheridan.com/query"
+            }
+        </script> 
         <style>main{display:flex;justify-content:center;width:100%}form{width:100%}.form-title{display:flex;justify-content:center}.question{margin-block-start:var(--big-gap)}input,textarea{width:100%;padding:1rem .5rem;border:none;border-radius:.15rem;font-family:var(--body-font);font-size:var(--body-font-size);background-color:var(--form-background-color)}textarea{min-height:100px;max-height:600px}</style>
     </head>
     <body class="margins-off">
@@ -84,14 +93,5 @@
             </div>
         </main>
         <script>function initContactForm(){let t=!1;const e=document.getElementById("contactForm");e&&(e.addEventListener("submit",(function(n){if(!t){n.preventDefault();e.querySelectorAll("*").forEach((t=>{t.style.display="none"}));const o=document.createElement("p");o.textContent="Thank you for your query!",e.insertBefore(o,e.firstChild),t=!0,setTimeout((()=>e.submit()),1e3)}})),document.getElementById("hidden_iframe").onload=function(){t&&(t=!1)})}document.addEventListener("DOMContentLoaded",initContactForm);</script>
-        <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "WebPage",
-                "name": "Query",
-                "description": "Query Mr. Ted!",
-                "url": "https://mrted.maxsheridan.com/query"
-            }
-        </script> 
     </body>
 </html>
