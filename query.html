@@ -35,9 +35,10 @@
         <style>main{display:flex;justify-content:center;width:100%}form{width:100%}.form-title{display:flex;justify-content:center}.question{margin-block-start:var(--big-gap)}input,textarea{width:100%;padding:1rem .5rem;border:none;border-radius:.15rem;font-family:var(--body-font);font-size:var(--body-font-size);background-color:var(--form-background-color)}textarea{min-height:100px;max-height:600px}</style>
     </head>
     <body class="margins-off">
+        <a href="#main-content" class="skip-link">Skip to content</a>
         <header class="linkstyling-off">
             <h1>
-                <a href="/" class="site-title" aria-label="Mr. Ted home">TED LITERARY</a>
+                <a href="/" class="site-title" aria-label="Link to homepage">TED LITERARY</a>
             </h1>
             <h2 id="nav-label" class="vh">Main Menu</h2>
             <nav aria-labelledby="nav-label">
@@ -46,14 +47,15 @@
                         <a href="/">ABOUT</a>
                     </li>
                     <li>
-                        <a href="/query" class="active">QUERY</a>
+                        <a href="/query">QUERY</a>
                     </li>
                     <li>
-                        <a href="/faq">FAQ</a>
+                        <a href="/faq" class="active">FAQ</a>
                     </li>
                 </ul>
             </nav>
         </header>
+        <main id="main-content" tab-index="-1">
         <main>
             <div class="acme-all-purpose-wrapper">
                 <form id="contactForm" name="contactForm" target="hidden_iframe" action="https://docs.google.com/forms/d/e/1FAIpQLSeqbal9UuvLECtvOeQhaXBk7wAB2psVlj-tX0ROF-L84LS0wQ/formResponse?">
