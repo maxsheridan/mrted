@@ -10,7 +10,7 @@
         <link rel="icon" sizes="32x32" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" sizes="any" href="/favicon.svg"  type="image/svg+xml">
         <link rel="apple-touch-icon" href="/assets/icons/apple_touch_icon.png" type="image/png">
-        <link rel="manifest" as="fetch" href="/manifest.json" type="application/json">
+        <link rel="manifest" href="/manifest.json" type="application/json">
         <link rel="canonical" href="https://mrted.maxsheridan.com/query">
         <title>Query - Ted Literary</title>
         <meta name="description" content="Query Mr. Ted!">
@@ -32,13 +32,13 @@
                 "url": "https://mrted.maxsheridan.com/query"
             }
         </script> 
-        <style>main{display:flex;justify-content:center;width:100%}form{width:100%}.form-title{display:flex;justify-content:center}.question{margin-block-start:var(--big-gap)}input,textarea{width:100%;padding:1rem .5rem;border:none;border-radius:.15rem;font-family:var(--body-font);font-size:var(--body-font-size);background-color:var(--form-background-color)}textarea{min-height:100px;max-height:600px}</style>
+        <style>main{display:flex;justify-content:center;width:100%}form{width:100%}.form-title{display:flex;justify-content:center}.field{margin-block-start:var(--big-gap)}input,textarea{width:100%;padding:1rem .5rem;border:none;border-radius:.15rem;font-family:var(--body-font);font-size:var(--body-font-size);background-color:var(--form-background-color)}textarea{min-height:100px;max-height:600px}.thank-you-message{text-align:center;color: var(--accent-color)}</style>
     </head>
     <body class="margins-off">
         <a href="#main-content" class="skip-link">Skip to content</a>
         <header class="linkstyling-off">
             <h1>
-                <a href="/" class="site-title" aria-label="Link to homepage">TED LITERARY</a>
+                <a href="/" class="site-title">TED LITERARY</a>
             </h1>
             <h2 id="nav-label" class="vh">Main Menu</h2>
             <nav aria-labelledby="nav-label">
@@ -55,45 +55,53 @@
                 </ul>
             </nav>
         </header>
-        <main id="main-content" tab-index="-1">
-        <main>
+        <main id="main-content" tabindex="-1">
             <div class="acme-all-purpose-wrapper">
                 <form id="contactForm" name="contactForm" target="hidden_iframe" action="https://docs.google.com/forms/d/e/1FAIpQLSeqbal9UuvLECtvOeQhaXBk7wAB2psVlj-tX0ROF-L84LS0wQ/formResponse?">
                     <h1 class="form-title">Query Ted</h1>
-                    <div class="question">
-                        <label for="entry.447528673">Name</label>
-                        <input type="text" name="entry.447528673" id="entry.447528673">
-                    </div>
-                    <div class="question">
-                        <label for="entry.503409760">Email</label>
-                        <input type="text" name="entry.503409760" id="entry.503409760">
-                    </div>
-                    <div class="question">
-                        <label for="entry.2023911735">Book Title</label>
-                        <input type="text" name="entry.2023911735" id="entry.2023911735">
-                    </div>
-                    <div class="question">
-                        <label for="entry.339888623">4-Sentence Pitch</label>
-                        <textarea name="entry.339888623" id="entry.339888623" placeholder=""></textarea>
-                    </div>
-                    <div class="question">
-                        <label for="entry.747259284">Short Bio</label>
-                        <textarea name="entry.747259284" id="entry.747259284" placeholder=""></textarea>
-                    </div>
-                    <div class="question">
-                        <label for="entry.882631877">Your Venmo Handle</label>
-                            <input type="text" name="entry.882631877" id="entry.882631877">
-                    </div>
+                    <fieldset>
+                        <legend class="vh">Submit your book pitch!</legend>
+                        <div class="field">
+                            <label for="entry.447528673">Name</label>
+                            <input type="text" name="entry.447528673" id="entry.447528673" aria-describedby="field1">
+                            <span id="field1" class="vh">Field 1 of 6</span>
+                        </div>
+                        <div class="field">
+                            <label for="entry.503409760">Email</label>
+                            <input type="text" name="entry.503409760" id="entry.503409760" aria-describedby="field2">
+                            <span id="field2" class="vh">Field 2 of 6</span>
+                        </div>
+                        <div class="field">
+                            <label for="entry.2023911735">Book Title</label>
+                            <input type="text" name="entry.2023911735" id="entry.2023911735" aria-describedby="field3">
+                            <span id="field3" class="vh">Field 3 of 6</span>
+                        </div>
+                        <div class="field">
+                            <label for="entry.339888623">4-Sentence Pitch</label>
+                            <textarea name="entry.339888623" id="entry.339888623" aria-describedby="field4"></textarea>
+                            <span id="field4" class="vh">Field 4 of 6</span>
+                        </div>
+                        <div class="field">
+                            <label for="entry.747259284">Short Bio</label>
+                            <textarea name="entry.747259284" id="entry.747259284" aria-describedby="field5"></textarea>
+                            <span id="field5" class="vh">Field 5 of 6</span>
+                        </div>
+                        <div class="field">
+                            <label for="entry.882631877">Your Venmo Handle</label>
+                            <input type="text" name="entry.882631877" id="entry.882631877" aria-describedby="field6">
+                            <span id="field6" class="vh">Field 5 of 6</span>
+                        </div>
+                    </fieldset>
                     <button type="submit">Send</button>
                     <noscript>
                         <p style="margin-top: 1rem; text-align: left; color: var(--accent-color)">
-                            Yikes! You’ve disabled JavaScript. This button can’t work.
+                            Please enable JavaScript.
                         </p>
                     </noscript>
                 </form>
                 <iframe name="hidden_iframe" id="hidden_iframe" style="display: none;"></iframe>
             </div>
         </main>
-        <script>function initContactForm(){let t=!1;const e=document.getElementById("contactForm");e&&(e.addEventListener("submit",(function(n){if(!t){n.preventDefault();e.querySelectorAll("*").forEach((t=>{t.style.display="none"}));const o=document.createElement("p");o.textContent="Thank you for your query!",e.insertBefore(o,e.firstChild),t=!0,setTimeout((()=>e.submit()),1e3)}})),document.getElementById("hidden_iframe").onload=function(){t&&(t=!1)})}document.addEventListener("DOMContentLoaded",initContactForm);</script>
+        <script>function initContactForm(){let submitted=!1;const form=document.getElementById("contactForm");if(!form)return;form.addEventListener("submit",function(e){if(!submitted){e.preventDefault();form.querySelectorAll("*:not(noscript)").forEach(el=>{el.style.display="none"});const thankYou=document.createElement("p");thankYou.textContent="Thank you for your query!";thankYou.className="thank-you-message";form.insertBefore(thankYou,form.firstChild);submitted=!0;setTimeout(()=>form.submit(),1000)}});document.getElementById("hidden_iframe").onload=function(){if(submitted){submitted=!1}}}document.addEventListener("DOMContentLoaded",initContactForm);</script>
     </body>
 </html>
